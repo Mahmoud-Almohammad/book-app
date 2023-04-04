@@ -1,9 +1,91 @@
-h1 {
-    color: red;
-    background-color: darkblue;
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lora&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Righteous&family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+}
+
+header {
+    height: 8em;
+    padding: 1.6em 0;
+    background-image: url(https://c1.wallpaperflare.com/preview/796/449/255/paper-texture-brown-raw.jpg);
+}
+
+main {
+    min-height: 30.6rem;
+    background-color: #f1efeb;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 footer {
-    color: dimgrey;
+    display: flex;
+    height: 8em;
+    background-image: url(https://c1.wallpaperflare.com/preview/796/449/255/paper-texture-brown-raw.jpg);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 24rem;
+}
+
+label {
+    width: 40vw;
+    height: 10vh;
+    border-radius: 10px;
+    background-color: lightgray;
+    color: #232323;
     text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input[type='radio'] {
+    width: 2vw;
+    height: 2vh;
+    cursor: pointer;
+}
+
+button {
+    width: 30vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(16, 15, 15);
+    color: #fff;
+    border-radius: 10px;
+}
+
+li h3 {
+    font-size: 1.5em;
+    margin: 1.5em 0;
+    color: #fff;
+}
+
+li h4 {
+    color: #a8a8a8;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+li p {
+    color: #fff;
+    font-size: large;
+    line-height: 4vh;
+    font-family: 'Lora', serif;
 }

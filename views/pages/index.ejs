@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>book-app</title>
     <link rel="stylesheet" href="/public/styles/base.css">
+    <link rel="stylesheet" href="/public/styles/layout.css">
 </head>
 <body>
-    <h1>It's working</h1>
+    <header>
+        <%- include('../layout/header') %>
+    </header>
+    <main>
+        <h1>Welcome to book-app, when you can find any book you want</h1>
+    </main>
+    <script src="../../public/js/app.js"></script>
+
     <footer>
-        this page is made by Mahmoud
+        <%- include('../layout/footer') %>
     </footer>
 </body>
 </html>
