@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for a book</title>
+    <link rel="stylesheet" href="../../../public/styles/base.css">
+    <link rel="stylesheet" href="../../../public/styles/layout.css">
+</head>
+<body>
+    <header>
+        <%- include('../../layout/header') %>
+    </header>
+
+    <main>
+        <h2 id="new-search">Search by Title or Author</h2>
+        <form action="/searches" method="post">
+            <input id="searchWord" type="text" placeholder="Enter a title or author" name="searchWord" required>
+    
+            <label class="title" for="title">
+               <span>Title</span> 
+            <input type="radio" name="search" class="title" value="title" required>
+        </label>
+    
+            <label class="author" for="author">
+                <span>Author</span>
+            <input type="radio" name="search" class="author" value="author" required>
+        </label>
+    
+            <button>Search book</button>
+        </form>
+    </main>
+
+    <footer>
+        <%- include('../../layout/footer') %>
+    </footer>
+
+    <script src="../../../public/js/app.js"></script>
+</body>
+</html>
