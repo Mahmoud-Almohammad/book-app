@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../../layout/head') %>
+<body>
+        <%- include('../../layout/header') %>
+
+        <ul class="listOfBooks show-books">
+                <li class="result-book">
+
+        <%- include('./detail', {book: books})%>
+
+        <p><%= books.description%></p>
+        <h3><%= books.isbn%></h3>
+        <h3>Bookshelf: <%= books.bookshelf%></h3>
+
+                </li>
+            </ul>
+
+        <%- include('../../layout/footer') %>
+   <script src="../../../public/js/app.js"></script>
+</body>
+</html>

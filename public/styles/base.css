@@ -69,6 +69,7 @@ button {
     background-color: rgb(16, 15, 15);
     color: #fff;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 li h3 {
